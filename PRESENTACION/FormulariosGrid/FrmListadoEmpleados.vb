@@ -4,6 +4,11 @@ Public Class FrmListadoEmpleados
     Dim strconexion As String = Main.StrConexion
     Dim ad As New ClsAccesoBD(strconexion)
     Private Sub FrmListadoEmpleados_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If flag = 1 Then
+            btnAgregar.Visible = False
+            btnEditar.Visible = False
+            btnEliminar.Visible = False
+        End If
         ActualizarGrid()
     End Sub
 
@@ -83,5 +88,23 @@ Public Class FrmListadoEmpleados
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
+    End Sub
+
+    Private Sub DGEmpleados_DoubleClick(sender As Object, e As EventArgs) Handles DGEmpleados.DoubleClick
+        Try
+            Dim id As Integer
+            Dim Nombre As String
+            If flag = 1 Then
+                id = DGEmpleados.CurrentRow.Cells.Item(0).Value
+                Nombre = DGEmpleados.CurrentRow.Cells.Item(1).Value
+
+                FrmGenerarVacaciones.txtID.Text = id
+                FrmGenerarVacaciones.txtEmpleado.Text = Nombre
+                Dispose()
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
     End Sub
 End Class

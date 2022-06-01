@@ -225,27 +225,11 @@ Public Class ClsAccesoBD
             End If
             Return resultado
         Catch ex As Exception
+            MsgBox(ex.Message)
             Throw ex
             Return False
         End Try
     End Function
-    Public Function VerificaPermiso(ByVal login As String, ByVal permiso As String) As Boolean
-        Dim sqlquery As String = "SELECT CONTROLGANADERO.PKG_SEGURIDAD.FN_VERIFICA_ACCESO('" & UCase(login) & "','" & permiso & "') from dual"
-        Dim cmd As New OleDbCommand
-        Dim resultado As String
-        Try
-            cmd.CommandType = CommandType.Text
-            cmd.CommandText = sqlquery
-            cmd.Connection = CrearConexion()
-            resultado = cmd.ExecuteScalar()
-            If _bconexion_directa = False Then
-                cmd.Connection.Close()
-            End If
-            Return resultado
-        Catch ex As Exception
-            Throw ex
-            Return False
-        End Try
-    End Function
+
 #End Region
 End Class

@@ -32,6 +32,7 @@ Partial Class MDIPrincipal
         Me.tsmVacaciones = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsiGeneraVaciones = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsiTomarVacaciones = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VacacionesEmpleadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmReportes = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsiSaldosRPT = New System.Windows.Forms.ToolStripMenuItem()
         Me.MSOpciones.SuspendLayout()
@@ -63,12 +64,12 @@ Partial Class MDIPrincipal
         '
         Me.tsiEmpleados.Image = CType(resources.GetObject("tsiEmpleados.Image"), System.Drawing.Image)
         Me.tsiEmpleados.Name = "tsiEmpleados"
-        Me.tsiEmpleados.Size = New System.Drawing.Size(180, 22)
+        Me.tsiEmpleados.Size = New System.Drawing.Size(143, 22)
         Me.tsiEmpleados.Text = "Empleados"
         '
         'tsmVacaciones
         '
-        Me.tsmVacaciones.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsiGeneraVaciones, Me.tsiTomarVacaciones})
+        Me.tsmVacaciones.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsiGeneraVaciones, Me.tsiTomarVacaciones, Me.VacacionesEmpleadosToolStripMenuItem})
         Me.tsmVacaciones.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tsmVacaciones.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.tsmVacaciones.Image = CType(resources.GetObject("tsmVacaciones.Image"), System.Drawing.Image)
@@ -81,15 +82,21 @@ Partial Class MDIPrincipal
         '
         Me.tsiGeneraVaciones.Image = CType(resources.GetObject("tsiGeneraVaciones.Image"), System.Drawing.Image)
         Me.tsiGeneraVaciones.Name = "tsiGeneraVaciones"
-        Me.tsiGeneraVaciones.Size = New System.Drawing.Size(195, 22)
+        Me.tsiGeneraVaciones.Size = New System.Drawing.Size(214, 22)
         Me.tsiGeneraVaciones.Text = "Generar Vacaciones"
         '
         'tsiTomarVacaciones
         '
         Me.tsiTomarVacaciones.Image = CType(resources.GetObject("tsiTomarVacaciones.Image"), System.Drawing.Image)
         Me.tsiTomarVacaciones.Name = "tsiTomarVacaciones"
-        Me.tsiTomarVacaciones.Size = New System.Drawing.Size(195, 22)
+        Me.tsiTomarVacaciones.Size = New System.Drawing.Size(214, 22)
         Me.tsiTomarVacaciones.Text = "Tomar Vacaciones"
+        '
+        'VacacionesEmpleadosToolStripMenuItem
+        '
+        Me.VacacionesEmpleadosToolStripMenuItem.Name = "VacacionesEmpleadosToolStripMenuItem"
+        Me.VacacionesEmpleadosToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
+        Me.VacacionesEmpleadosToolStripMenuItem.Text = "Vacaciones Empleados"
         '
         'tsmReportes
         '
@@ -138,4 +145,5 @@ Partial Class MDIPrincipal
     Friend WithEvents tsiTomarVacaciones As ToolStripMenuItem
     Friend WithEvents tsmReportes As ToolStripMenuItem
     Friend WithEvents tsiSaldosRPT As ToolStripMenuItem
+    Friend WithEvents VacacionesEmpleadosToolStripMenuItem As ToolStripMenuItem
 End Class

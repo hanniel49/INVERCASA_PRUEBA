@@ -16,3 +16,6 @@ C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA
 C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA\PRESENTACION\obj\Debug\PRESENTACION.exe
 C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA\PRESENTACION\obj\Debug\PRESENTACION.xml
 C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA\PRESENTACION\obj\Debug\PRESENTACION.pdb
+C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA\PRESENTACION\obj\Debug\PRESENTACION.FrmGenerarVacaciones.resources
+C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA\PRESENTACION\obj\Debug\PRESENTACION.FrmListadoVacionesEmpleados.resources
+C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA\PRESENTACION\obj\Debug\PRESENTACION.FrmSolicitarVacaciones.resources

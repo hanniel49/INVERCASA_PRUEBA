@@ -65,6 +65,8 @@ Public Class MDIPrincipal
     End Sub
 
     Private Sub tsiEmpleados_Click(sender As Object, e As EventArgs) Handles tsiEmpleados.Click
+
+        flag = 0
         FrmListadoEmpleados.MdiParent = Me
 
         With FrmListadoEmpleados
@@ -75,9 +77,12 @@ Public Class MDIPrincipal
     End Sub
 
     Private Sub tsiGeneraVaciones_Click(sender As Object, e As EventArgs) Handles tsiGeneraVaciones.Click
-        FrmListadoEmpleados.MdiParent = Me
 
-        With FrmListadoEmpleados
+        AccionFreeDay = 0
+
+        FrmGenerarVacaciones.MdiParent = Me
+
+        With FrmGenerarVacaciones
             .WindowState = FormWindowState.Normal
             .MdiParent = Me
             .Show()
@@ -88,6 +93,16 @@ Public Class MDIPrincipal
         FrmListadoEmpleados.MdiParent = Me
 
         With FrmListadoEmpleados
+            .WindowState = FormWindowState.Normal
+            .MdiParent = Me
+            .Show()
+        End With
+    End Sub
+
+    Private Sub VacacionesEmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VacacionesEmpleadosToolStripMenuItem.Click
+        FrmListadoVacionesEmpleados.MdiParent = Me
+
+        With FrmListadoVacionesEmpleados
             .WindowState = FormWindowState.Normal
             .MdiParent = Me
             .Show()

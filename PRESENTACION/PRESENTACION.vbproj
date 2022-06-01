@@ -73,6 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormulariosEdicion\FrmGenerarVacaciones.Designer.vb">
+      <DependentUpon>FrmGenerarVacaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosEdicion\FrmGenerarVacaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosEdicion\FrmSolicitarVacaciones.Designer.vb">
+      <DependentUpon>FrmSolicitarVacaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosEdicion\FrmSolicitarVacaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormulariosGrid\FrmListadoEmpleados.Designer.vb">
       <DependentUpon>FrmListadoEmpleados.vb</DependentUpon>
     </Compile>
@@ -83,6 +95,12 @@
       <DependentUpon>FrmRegistroEmpleado.vb</DependentUpon>
     </Compile>
     <Compile Include="FormulariosEdicion\FrmRegistroEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulariosGrid\FrmListadoVacionesEmpleados.Designer.vb">
+      <DependentUpon>FrmListadoVacionesEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormulariosGrid\FrmListadoVacionesEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.vb" />
@@ -110,11 +128,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormulariosEdicion\FrmGenerarVacaciones.resx">
+      <DependentUpon>FrmGenerarVacaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosEdicion\FrmSolicitarVacaciones.resx">
+      <DependentUpon>FrmSolicitarVacaciones.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormulariosGrid\FrmListadoEmpleados.resx">
       <DependentUpon>FrmListadoEmpleados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormulariosEdicion\FrmRegistroEmpleado.resx">
       <DependentUpon>FrmRegistroEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulariosGrid\FrmListadoVacionesEmpleados.resx">
+      <DependentUpon>FrmListadoVacionesEmpleados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIPrincipal.resx">
       <DependentUpon>MDIPrincipal.vb</DependentUpon>
