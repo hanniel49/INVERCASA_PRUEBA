@@ -73,18 +73,19 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmListadoEmpleados.Designer.vb">
+    <Compile Include="FormulariosGrid\FrmListadoEmpleados.Designer.vb">
       <DependentUpon>FrmListadoEmpleados.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmListadoEmpleados.vb">
+    <Compile Include="FormulariosGrid\FrmListadoEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRegistroEmpleado.Designer.vb">
+    <Compile Include="FormulariosEdicion\FrmRegistroEmpleado.Designer.vb">
       <DependentUpon>FrmRegistroEmpleado.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegistroEmpleado.vb">
+    <Compile Include="FormulariosEdicion\FrmRegistroEmpleado.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Main.vb" />
     <Compile Include="MDIPrincipal.Designer.vb">
       <DependentUpon>MDIPrincipal.vb</DependentUpon>
     </Compile>
@@ -109,10 +110,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmListadoEmpleados.resx">
+    <EmbeddedResource Include="FormulariosGrid\FrmListadoEmpleados.resx">
       <DependentUpon>FrmListadoEmpleados.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistroEmpleado.resx">
+    <EmbeddedResource Include="FormulariosEdicion\FrmRegistroEmpleado.resx">
       <DependentUpon>FrmRegistroEmpleado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIPrincipal.resx">
@@ -143,5 +144,6 @@
       <Name>CLSEDatos</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

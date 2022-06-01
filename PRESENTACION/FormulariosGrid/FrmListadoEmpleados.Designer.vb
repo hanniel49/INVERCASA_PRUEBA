@@ -27,7 +27,7 @@ Partial Class FrmListadoEmpleados
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnAgregar = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.dgvEmpleados = New System.Windows.Forms.DataGridView()
+        Me.DGEmpleados = New System.Windows.Forms.DataGridView()
         Me.ID_EMPLEADO = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NOMBRE = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TIPO_DNI = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -35,7 +35,7 @@ Partial Class FrmListadoEmpleados
         Me.FECHA_INGRESO = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SALARIO_BASE = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DIRECCION = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.dgvEmpleados, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGEmpleados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnEliminar
@@ -75,48 +75,55 @@ Partial Class FrmListadoEmpleados
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Listado de Empleados"
         '
-        'dgvEmpleados
+        'DGEmpleados
         '
-        Me.dgvEmpleados.AllowUserToAddRows = False
-        Me.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvEmpleados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID_EMPLEADO, Me.NOMBRE, Me.TIPO_DNI, Me.DNI, Me.FECHA_INGRESO, Me.SALARIO_BASE, Me.DIRECCION})
-        Me.dgvEmpleados.Location = New System.Drawing.Point(11, 46)
-        Me.dgvEmpleados.Name = "dgvEmpleados"
-        Me.dgvEmpleados.Size = New System.Drawing.Size(658, 330)
-        Me.dgvEmpleados.TabIndex = 5
+        Me.DGEmpleados.AllowUserToAddRows = False
+        Me.DGEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGEmpleados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID_EMPLEADO, Me.NOMBRE, Me.TIPO_DNI, Me.DNI, Me.FECHA_INGRESO, Me.SALARIO_BASE, Me.DIRECCION})
+        Me.DGEmpleados.Location = New System.Drawing.Point(11, 46)
+        Me.DGEmpleados.Name = "DGEmpleados"
+        Me.DGEmpleados.Size = New System.Drawing.Size(658, 330)
+        Me.DGEmpleados.TabIndex = 5
         '
         'ID_EMPLEADO
         '
+        Me.ID_EMPLEADO.DataPropertyName = "ID_EMPLEADO"
         Me.ID_EMPLEADO.HeaderText = "ID"
         Me.ID_EMPLEADO.Name = "ID_EMPLEADO"
         '
         'NOMBRE
         '
+        Me.NOMBRE.DataPropertyName = "NOMBRE"
         Me.NOMBRE.HeaderText = "NOMBRE"
         Me.NOMBRE.Name = "NOMBRE"
         '
         'TIPO_DNI
         '
+        Me.TIPO_DNI.DataPropertyName = "TIPO_DNI"
         Me.TIPO_DNI.HeaderText = "TIPO DNI"
         Me.TIPO_DNI.Name = "TIPO_DNI"
         '
         'DNI
         '
+        Me.DNI.DataPropertyName = "DNI"
         Me.DNI.HeaderText = "DNI"
         Me.DNI.Name = "DNI"
         '
         'FECHA_INGRESO
         '
+        Me.FECHA_INGRESO.DataPropertyName = "FECHA_INGRESO"
         Me.FECHA_INGRESO.HeaderText = "FECHA INGRESO"
         Me.FECHA_INGRESO.Name = "FECHA_INGRESO"
         '
         'SALARIO_BASE
         '
+        Me.SALARIO_BASE.DataPropertyName = "SALARIO_BASE"
         Me.SALARIO_BASE.HeaderText = "SALARIO BASE"
         Me.SALARIO_BASE.Name = "SALARIO_BASE"
         '
         'DIRECCION
         '
+        Me.DIRECCION.DataPropertyName = "DIRECCION"
         Me.DIRECCION.HeaderText = "DIRECCION"
         Me.DIRECCION.Name = "DIRECCION"
         '
@@ -129,11 +136,11 @@ Partial Class FrmListadoEmpleados
         Me.Controls.Add(Me.btnEditar)
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.dgvEmpleados)
+        Me.Controls.Add(Me.DGEmpleados)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmListadoEmpleados"
         Me.Text = "Catalogo Empleados"
-        CType(Me.dgvEmpleados, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGEmpleados, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -143,7 +150,7 @@ Partial Class FrmListadoEmpleados
     Friend WithEvents btnEditar As Button
     Friend WithEvents btnAgregar As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents dgvEmpleados As DataGridView
+    Friend WithEvents DGEmpleados As DataGridView
     Friend WithEvents ID_EMPLEADO As DataGridViewTextBoxColumn
     Friend WithEvents NOMBRE As DataGridViewTextBoxColumn
     Friend WithEvents TIPO_DNI As DataGridViewTextBoxColumn
