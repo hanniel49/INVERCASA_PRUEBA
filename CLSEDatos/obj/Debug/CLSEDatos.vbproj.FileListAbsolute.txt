@@ -1,7 +1,6 @@
 C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA\CLSEDatos\bin\Debug\CLSEDatos.dll
 C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA\CLSEDatos\bin\Debug\CLSEDatos.pdb
 C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA\CLSEDatos\bin\Debug\CLSEDatos.xml
-C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA\CLSEDatos\obj\Debug\CLSEDatos.vbproj.AssemblyReference.cache
 C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA\CLSEDatos\obj\Debug\CLSEDatos.Resources.resources
 C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA\CLSEDatos\obj\Debug\CLSEDatos.vbproj.GenerateResource.cache
 C:\Users\fguzman\OneDrive - MACESA\Documentos\Desarrollo\github\INVERCASA_PRUEBA\CLSEDatos\obj\Debug\CLSEDatos.vbproj.CoreCompileInputs.cache

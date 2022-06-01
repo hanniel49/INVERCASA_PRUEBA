@@ -108,4 +108,12 @@ Public Class MDIPrincipal
             .Show()
         End With
     End Sub
+
+    Private Sub tsiSaldosRPT_Click(sender As Object, e As EventArgs) Handles tsiSaldosRPT.Click
+
+        'FrmRptVacaciones.parametro1 = Id_Sol
+        FrmRptVacaciones.nombreReporte = "rptVacaciones.rpt"
+        FrmRptVacaciones.ShowDialog()
+
+    End Sub
 End Class
